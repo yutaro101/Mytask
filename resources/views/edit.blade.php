@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="/css/app.css">
     </head>
+    @extends('layouts.app')　
+    @section('content')
     <body>
         <h1 class="title">編集画面</h1>
     <div class="content">
@@ -26,4 +28,5 @@
         </form>
     </div>
   </body>
+  @endsection
 </html>
