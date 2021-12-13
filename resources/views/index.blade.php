@@ -10,12 +10,12 @@
         <input id="sbtn1" type="submit" value="検索" />
         </form>
     </head>
+     
      @section('content')
     @extends('layouts.app')
     <body>
         {{Auth::user()->name}}
         <h1>My tasks</h1>
-        
         [<a href='/posts/create'>create</a>]
         <div class='posts'>
         
@@ -26,6 +26,8 @@
             <a href="/posts/{{ $post->id }}">{{ $post->title }}</a></h2>
             <p class='body'>{{ $post->body }}</p>
         </div>
+        <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
+        <a href="">{{ $post->category->name }}</a>
             @endforeach
             @endsection
 

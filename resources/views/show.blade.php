@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
+       <a href="">{{ $post->category->name }}</a>
         <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
          <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
           @csrf
