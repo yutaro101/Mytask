@@ -9,20 +9,22 @@
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
-       <a href="">{{ $post->category->name }}</a>
+       
+        <h1 class="title">
+            {{ $post->title }}
+        </h1>
+        <div class="content">
+            <div class="content__post">
+                <h3>内容</h3>
+                <p>{{ $post->body }}</p>    
+                
+                <a href="">{{ $post->category->name }}</a>
         <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
          <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
           @csrf
           @method('DELETE')
           <button type="submit">delete</button> 
           </form>
-        <h1 class="title">
-            {{ $post->title }}
-        </h1>
-        <div class="content">
-            <div class="content__post">
-                <h3>本文</h3>
-                <p>{{ $post->body }}</p>    
             </div>
         </div>
         <div class="footer">

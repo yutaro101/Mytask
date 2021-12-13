@@ -7,7 +7,7 @@
     @extends('layouts.app')　　　　　　　　　　　　　　　　　　
     @section('content')
     <body>
-        <h1>Blog Name</h1>
+        <h1>TASK</h1>
         <form action="/posts" method="POST">
             @csrf
             <div class="title">
