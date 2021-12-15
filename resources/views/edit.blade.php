@@ -24,6 +24,10 @@
                 <h2>内容</h2>
                 <input type='text' name='post[body]' value="{{ $post->body }}">
             </div>
+             <div class='content__thing'>
+                <h2>持ち物</h2>
+                <input type='text' name='post[things]' value="{{ $post->things}}">
+            </div>
             <input type="submit" value="保存">
         </form>
     </div>

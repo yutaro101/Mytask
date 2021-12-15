@@ -8,7 +8,8 @@ class Post extends Model
     protected $fillable = [
     'title',
     'body',
-    'category_id'
+    'category_id',
+    'things'
     ];
     
 public function getByLimit(int $limit_count = 5)
