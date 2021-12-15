@@ -7,15 +7,17 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="/css/app.css">
-    </head>
+    </head> 
+     @extends('layouts.app')　　　　　　　　　　　　　　　　　　
+         @section('content')
     <body>
-       
+       <h4>title</h4>
         <h1 class="title">
             {{ $post->title }}
         </h1>
         <div class="content">
             <div class="content__post">
-                <h3>内容</h3>
+                <h3>body</h3>
                 <p>{{ $post->body }}</p>    
                 
                 <a href="">{{ $post->category->name }}</a>
@@ -29,6 +31,7 @@
         </div>
         <div class="footer">
             <a href="/">戻る</a>
+        @endsection
         </div>
     </body>
 </html>
