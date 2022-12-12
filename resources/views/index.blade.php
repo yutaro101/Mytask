@@ -6,8 +6,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <form id="form1" action="" method="get">
-        <input id="sbox1" id="s" name="s" type="text" placeholder="キーワードを入力" />
-        <input id="sbtn1" type="submit" value="検索" />
+      
         </form>
     </head>
      
@@ -22,8 +21,7 @@
         <div class='post'>
             <h2 class='title'>
             <a href="/posts/{{ $post->id }}">{{ $post->title }}</a></h2>
-            <p class='body'>{{ $post->body }}</p>
-            <p class='things'>{{ $post->things }}</p>
+            
         </div>
         <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
             @endforeach

@@ -40,11 +40,11 @@
         </div>
         
         <div class="category">
-           
+         
    
   </div>
     
-    
+     
     </body>
     @endsection
 </html>

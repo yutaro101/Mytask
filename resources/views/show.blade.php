@@ -19,10 +19,10 @@
             <div class="content__post">
                 <h3>body</h3>
                 <p>{{ $post->body }}</p>
-                <h4>things to bring</h4>
-                <p>{{ $post->things }}</p>  
-                
-                <a href="">{{ $post->category->name }}</a>
+                <h4>things to bring</h> <input type="checkbox"  >
+                <p>{{ $post->things }}</p>
+         
+      <a href="">{{ $post->category->name }}</a>
         <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
          <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
           @csrf
